@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Análisis de la Mortalidad en España: Un Enfoque por Género y Edad (1998-2022)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto de visualización de datos ofrece una perspectiva interactiva y detallada sobre la siniestralidad en España desde 1998 hasta 2022, examinandose las variables de sexo, rango de edad y localización geográfica por provincia. Utilizando un enfoque dinámico y narrativo se pretende permitir explorar los datos y descubrir patrones y comportamientos a través del tiempo y entre diferentes demografías.
 
-## Available Scripts
+# Características del Proyecto
+## Mapas Coropléticos Interactivos
+El proyecto utiliza dos mapas coropléticos separados para hombres y mujeres, donde cada provincia está coloreada según la siniestralidad ponderada, variando de tonos de azul (bajo) a rojo (alto). Estos mapas sirven como una herramienta para visualizar las diferencias geográficas en los datos de siniestralidad.
 
-In the project directory, you can run:
+## Detalles en Tooltip
+Al interactuar con cada provincia se puede hacer click en cada una para revelar un tooltip detallado que muestra los rangos de edad específicos, proporcionando una desglose más profundo de la población, fallecidos y siniestralidad correspondiente a cada uno.
 
-### `npm start`
+## Heatmaps por Sexo
+Debajo de los mapas, se encuentran dos heatmaps que representan la siniestralidad para cada sexo separando por grupos de edad. Están organizados con filas que representan grupos de edad y columnas que representan provincias, ofreciendo una rápida comparativa visual.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Storytelling Dinámico con Scroll
+Una de las características más importantes del proyecto es la capacidad para contar historias a medida que el usuario hace scroll. Comenzando en 1998 y avanzando hacia 2022, la visualización se desarrolla cronológicamente. A medida que el usuario se desplaza, se resaltan eventos y tendencias clave y el fondo cambia gradualmente de rojo a azul, simbolizando una disminución general en la siniestralidad a lo largo de los años.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Objetivos Narrativos
+El proyecto busca ofrecer una nueva perspectiva sobre los datos de siniestralidad, destacando cómo factores como la ubicación geográfica, sexo y edad influyen en las estadísticas de fallecimientos.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+El enfoque dual del proyecto, que combina una exploración libre con storytelling guiado hace que esta visualización no solo sea una herramienta de análisis sino también un medio para la educación y concienciación.
