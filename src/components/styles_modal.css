@@ -1,0 +1,138 @@
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 350px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Alinea al inicio de la pantalla */
+    background-color: rgba(0, 0, 0, 0.4);  /* Fondo semi-transparente */
+    z-index: 1050; 
+}
+
+/* Contenido del modal */
+.modal-content {
+    width: 80%;
+    max-width: 80%;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra alrededor del modal */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    max-height: 100%;
+    margin-top: 0%;
+}
+
+/* Estilos para el contenedor del mapa dentro y fuera del modal */
+#map-container-hombres-modal, #map-container-mujeres-modal {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    flex-direction: row;
+}
+
+/* Botón para cerrar el modal */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contenedor del título en el modal */
+.title-container {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Georgia, Helvetica, sans-serif";
+    color: #ffffff;
+    margin-top: -180px;
+    margin-bottom: 0px;
+}
+
+/* Estilos del título en el modal */
+.title-container h2 {
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* Contenedor de los mapas en el modal */
+.maps-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Estilos para el modal de heatmap */
+.modalheat {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(177, 159, 214, 0.85);
+    z-index: 1050;
+}
+
+/* Contenido del modal de heatmap */
+.modal-contentheat {
+    width: 100%;
+    max-width: 100%;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    max-height: 100%;
+    margin-top: 0%;
+}
+
+/* Contenedor del título en el modal de heatmap */
+.title-containerheat {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Georgia, Helvetica, sans-serif";
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Estilos del título en el modal de heatmap */
+.title-containerheat h2 {
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}

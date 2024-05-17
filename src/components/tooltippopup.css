@@ -1,0 +1,83 @@
+/* Estilos para el contenedor principal del tooltip emergente */
+.tooltippopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+  border-radius: 8px;
+}
+
+.button-modern {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #727272;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-modern:hover {
+  background-color: #727272;
+  transform: translateY(-2px);
+}
+
+.button-info {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-info:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.tooltippopup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltippopupmap {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+  border-radius: 8px;
+}
+
+.tooltippopupinfo {
+  position: fixed;
+  transform: translate(-100%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+  border-radius: 8px;
+  width: 60%;
+  max-width: 800px;
+}
+
+.tooltippopupinfo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

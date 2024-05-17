@@ -2,13 +2,23 @@
   "name": "visualizacion-fallecimientos",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vonlucken.github.io/visualizacion-fallecimientos",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "d3": "^7.9.0",
+    "d3-sankey": "^0.12.3",
+    "d3-tip": "^0.9.1",
+    "gsap": "^3.12.5",
     "react": "^18.3.1",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "react-spring": "^9.7.3",
+    "react-thermometer-component": "^1.0.1",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

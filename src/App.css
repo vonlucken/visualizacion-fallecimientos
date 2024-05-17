@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+body {
+  background: linear-gradient(
+          rgba(255, 0, 0, 0.301),
+          rgba(0, 16, 238, 0.384)
+      ),
+      url('/background.png') no-repeat center center fixed;
+      background-size: cover;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +44,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#map-container {
+  width: 100%; 
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px; 
+  overflow: auto;
+}
+
+#scrollContainer {
+  position: relative;
+  overflow: auto; 
+  height: auto; 
+  margin: 20px 10px;
 }
