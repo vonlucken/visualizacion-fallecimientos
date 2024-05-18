@@ -48,8 +48,8 @@ const ProvinceDetails = ({ details, onClose, position }) => {
                     <thead>
                         <tr>
                             <th>Rango de Edad</th>
-                            <th style={{ textAlign: 'right' }}>Total</th>
-                            <th style={{ textAlign: 'right' }}>Frecuencia</th>
+                            <th style={{ textAlign: 'right' }}>Pob.</th>
+                            <th style={{ textAlign: 'right' }}>Fall.</th>
                             <th style={{ textAlign: 'right' }}>Tasa (%)</th>
                         </tr>
                     </thead>

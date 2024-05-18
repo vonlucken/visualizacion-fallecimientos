@@ -21,6 +21,8 @@ const App = () => {
     const [year, setYear] = useState(1998);
     const [geoJSONHombres, setGeoJSONHombres] = useState(null);
     const [geoJSONMujeres, setGeoJSONMujeres] = useState(null);
+    const [geoJSONModalHombres, setGeoJSONModalHombres] = useState(null);
+    const [geoJSONModalMujeres, setGeoJSONModalMujeres] = useState(null);
     const [aggregatedDataHombres, setAggregatedDataHombres] = useState(null);
     const [aggregatedDataMujeres, setAggregatedDataMujeres] = useState(null);
     const [mortalityDatasaveHombres, setMortalityDataSaveHombres] = useState(null);
@@ -60,11 +62,15 @@ const App = () => {
         Promise.all([
             fetch(process.env.PUBLIC_URL + '/data/spain-provinces.geojson').then(response => response.json()),
             fetch(process.env.PUBLIC_URL + '/data/spain-provinces.geojson').then(response => response.json()),
+            fetch(process.env.PUBLIC_URL + '/data/spain-provinces.geojson').then(response => response.json()),
+            fetch(process.env.PUBLIC_URL + '/data/spain-provinces.geojson').then(response => response.json()),
             d3.csv(process.env.PUBLIC_URL + '/data/mortalidad_hombres.csv'),
             d3.csv(process.env.PUBLIC_URL + '/data/mortalidad_mujeres.csv')
-        ]).then(([hombresGeoJSON, mujeresGeoJSON, hombresData, mujeresData]) => {
+        ]).then(([hombresModalGeoJSON, mujeresModalGeoJSON,hombresGeoJSON, mujeresGeoJSON, hombresData, mujeresData]) => {
             setGeoJSONHombres(hombresGeoJSON);
             setGeoJSONMujeres(mujeresGeoJSON);
+            setGeoJSONModalHombres(hombresModalGeoJSON);
+            setGeoJSONModalMujeres(mujeresModalGeoJSON);
             setMortalityDataSaveHombres(hombresData);
             setMortalityDataSaveMujeres(mujeresData);
             const combinedMortalityData = [...hombresData, ...mujeresData];
@@ -186,12 +192,12 @@ const App = () => {
 
     
     return (
-        <div id="main-content" style={{ height: '1200vh'}}>
+        <div id="main-content" style={{ height: '1000vh'}}>
             <h1 style={{ fontFamily: '"Georgia Neue", Georgia, Arial, sans-serif', textAlign: 'center' }}>
                 Análisis de la Mortalidad en España: Un Enfoque por Género y Edad (1998-2022)
             </h1>
             {/* Mensaje para el año de COVID-19 */}
-            {isCovidYearActive && <div style={{ padding: '20px', backgroundColor: 'yellow', textAlign: 'center' }}>
+            {isCovidYearActive && <div style={{ padding: '1px', backgroundColor: 'yellow', textAlign: 'center', margin: '-20px 10px 10px 0' }}>
                 Observando el impacto de la pandemia del COVID-19 en 2020.
             </div>}
             <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', margin: '10px 10px 10px 0' }}>
@@ -241,8 +247,8 @@ const App = () => {
                     <MapModal
                         year="1998"
                         onClose2008={onClose2008}
-                        geoJSONHombres={geoJSONHombres}
-                        geoJSONMujeres={geoJSONMujeres}
+                        geoJSONHombres={geoJSONModalHombres}
+                        geoJSONMujeres={geoJSONModalMujeres}
                         aggregatedDataHombres={aggregatedDataHombres}
                         aggregatedDataMujeres={aggregatedDataMujeres}
                         mortalityDatasaveHombres={mortalityDatasaveHombres}
