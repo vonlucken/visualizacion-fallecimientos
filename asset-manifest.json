@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/visualizacion-fallecimientos/static/css/main.1645c340.css",
-    "main.js": "/visualizacion-fallecimientos/static/js/main.11aad20a.js",
+    "main.css": "/visualizacion-fallecimientos/static/css/main.c986539e.css",
+    "main.js": "/visualizacion-fallecimientos/static/js/main.a358b8e6.js",
     "static/js/453.fa0bea06.chunk.js": "/visualizacion-fallecimientos/static/js/453.fa0bea06.chunk.js",
     "static/media/background.png": "/visualizacion-fallecimientos/static/media/background.52eb3f46fec9f7854bd6.png",
     "index.html": "/visualizacion-fallecimientos/index.html",
-    "main.1645c340.css.map": "/visualizacion-fallecimientos/static/css/main.1645c340.css.map",
-    "main.11aad20a.js.map": "/visualizacion-fallecimientos/static/js/main.11aad20a.js.map",
+    "main.c986539e.css.map": "/visualizacion-fallecimientos/static/css/main.c986539e.css.map",
+    "main.a358b8e6.js.map": "/visualizacion-fallecimientos/static/js/main.a358b8e6.js.map",
     "453.fa0bea06.chunk.js.map": "/visualizacion-fallecimientos/static/js/453.fa0bea06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1645c340.css",
-    "static/js/main.11aad20a.js"
+    "static/css/main.c986539e.css",
+    "static/js/main.a358b8e6.js"
   ]
 }
