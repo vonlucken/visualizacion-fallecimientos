@@ -13,11 +13,12 @@ const HeatMapModal = ({ year, onClose2013, mortalityData }) => {
                 <button className="close-button" onClick={onClose2013}>✕</button>
                 {/* Contenedor para el HeatMap */}
                 <div className="maps-container-2">
-                    <HeatMap data={mortalityData} year={year} is_modal={true} />
+                    <HeatMap data={mortalityData} year={year} ismodal={true} />
                 </div>
                 {/* Contenedor del título */}
                 <div className="title-containerheat">
-                    <h2>Comportamiento en 1998</h2>
+                    <h2>Comparativa 1998-2013</h2>
+                    <p>Se puede ver la disminución de la tasa de fallecimiento en todos los grupos de edad.</p>
                 </div>
             </div>
         </div>

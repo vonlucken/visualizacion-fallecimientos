@@ -40,6 +40,12 @@ const MapModal = ({ year, onClose2008, geoJSONHombres, geoJSONMujeres, aggregate
                 <div className="title-container">
                     <h2>Mapas en el 1998</h2>
                 </div>
+                <div>
+                <p style={{ fontSize: '24px', fontFamily: '"Georgia Neue", Georgia, Arial, sans-serif', color: 'white', textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000' }}>
+                    Vemos como la mortalidad se ha reducido <br />comparando con el 1998. Puedes explorar <br />para comparar los valores.
+                </p>
+
+                </div>
             </div>
         </div>
     );

@@ -232,7 +232,7 @@ const App = () => {
                 ) : (
                     mortalityData && !isLoading && mortalityData.length > 0 && (
                         <div style={{ position: 'flex', top: '50%', left: '0%', transform: 'translate(-0%, -0%)', marginTop: '0px'}}>
-                            <HeatMap data={mortalityData} year={year} is_modal={false}/>
+                            <HeatMap data={mortalityData} year={year} ismodal={false}/>
                         </div>
                     )
                 )}

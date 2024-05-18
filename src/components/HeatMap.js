@@ -6,7 +6,7 @@ const margin = { top: 0, right: 2, bottom: 50, left: 180 };
 const width = 1400 - margin.left - margin.right;
 const height = 155 - margin.top - margin.bottom;
 
-const HeatMap = ({ data, year }) => {
+const HeatMap = ({ data, year, ismodal }) => {
     // Referencias para los SVGs y el tooltip
     const svgRefHombres = useRef(null);
     const svgRefMujeres = useRef(null);
@@ -173,7 +173,9 @@ const HeatMap = ({ data, year }) => {
                     .selectAll("text")
                     .attr("transform", "translate(-8,0)rotate(-25)")
                     .style("text-anchor", "end")
-                    .style("font-size", "13px");
+                    .style("font-size", "13px")
+                    .style("fill", ismodal ? 'white' : null);
+
             }
         
             // Eje Y para categorías
@@ -181,7 +183,9 @@ const HeatMap = ({ data, year }) => {
                 .attr("transform", `translate(${margin.left}, ${margin.top + offsetY})`)
                 .call(d3.axisLeft(yScale)
                     .tickFormat(group => group.split(" ").slice(1).join(" ")))
-                .style("font-size", "13px");
+                .selectAll("text")
+                .style("font-size", "13px")
+                .style("fill", ismodal ? 'white' : null);
         };
         
         // Dibuja el heatmap de Hombres sin etiquetas en el eje X
@@ -194,6 +198,7 @@ const HeatMap = ({ data, year }) => {
             .attr("transform", "rotate(-90)")
             .attr("text-anchor", "middle")
             .style("font-size", "16px")
+            .style("fill", ismodal ? 'white' : null)
             .text("Hombres");
         
         // Dibuja el heatmap de Mujeres con etiquetas en el eje X y un offsetY para subirlo
@@ -207,9 +212,10 @@ const HeatMap = ({ data, year }) => {
             .attr("transform", "rotate(-90)")
             .attr("text-anchor", "middle")
             .style("font-size", "16px")
+            .style("fill", ismodal ? 'white' : null)
             .text("Mujeres");
 
-    }, [data, year]);
+    }, [data, year, ismodal]);
 
     // useEffect para manejar el tooltip al hacer scroll
     useEffect(() => {
