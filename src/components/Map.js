@@ -7,6 +7,7 @@ const Map = ({ id, year, gender, geoJSON, aggregatedData, mortalityData, modal_b
     const [selectedProvinceDetails, setSelectedProvinceDetails] = useState(null);
     const [activeProvinceCode, setActiveProvinceCode] = useState(null);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const [mousePositionOffset, setMousePositionOffset] = useState({ x: -250, y: -300 });
     
     // Identificadores únicos para contenedor y SVG
     const containerId = modal_bool === "true" ? `map-container-${id}-modal` : `map-container-${id}`;
@@ -205,6 +206,18 @@ const Map = ({ id, year, gender, geoJSON, aggregatedData, mortalityData, modal_b
 
 }, [year, gender, geoJSON, aggregatedData, mortalityData, activeProvinceCode, id, tooltipId, modal_bool]);
 
+    // Función para calcular la posición del tooltip con o sin offset
+    const calculatePosition = () => {
+        if (modal_bool === "true") {
+            return {
+                x: mousePosition.x + mousePositionOffset.x,
+                y: mousePosition.y + mousePositionOffset.y,
+            };
+        } else {
+            return mousePosition;
+        }
+    };
+
 // Parte del código para mostrar los detalles de la provincia seleccionada
 return (
     <>
@@ -214,8 +227,8 @@ return (
         <ProvinceDetails 
             details={selectedProvinceDetails} 
             onClose={() => setSelectedProvinceDetails(null)}
-            position={mousePosition}
-        />
+            position={calculatePosition()}
+            />
     </>
 );
 };
