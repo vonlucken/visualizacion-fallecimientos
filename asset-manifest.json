@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/visualizacion-fallecimientos/static/css/main.ee6417f0.css",
-    "main.js": "/visualizacion-fallecimientos/static/js/main.e70d712d.js",
+    "main.js": "/visualizacion-fallecimientos/static/js/main.a035059f.js",
     "static/js/453.fa0bea06.chunk.js": "/visualizacion-fallecimientos/static/js/453.fa0bea06.chunk.js",
     "static/media/background.png": "/visualizacion-fallecimientos/static/media/background.52eb3f46fec9f7854bd6.png",
     "index.html": "/visualizacion-fallecimientos/index.html",
     "main.ee6417f0.css.map": "/visualizacion-fallecimientos/static/css/main.ee6417f0.css.map",
-    "main.e70d712d.js.map": "/visualizacion-fallecimientos/static/js/main.e70d712d.js.map",
+    "main.a035059f.js.map": "/visualizacion-fallecimientos/static/js/main.a035059f.js.map",
     "453.fa0bea06.chunk.js.map": "/visualizacion-fallecimientos/static/js/453.fa0bea06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee6417f0.css",
-    "static/js/main.e70d712d.js"
+    "static/js/main.a035059f.js"
   ]
 }
