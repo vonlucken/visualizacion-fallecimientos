@@ -208,9 +208,9 @@ const App = () => {
                         {geoJSONHombres && geoJSONMujeres && aggregatedDataHombres && aggregatedDataMujeres && mortalityDatasaveHombres && mortalityDatasaveMujeres && (
                             <>
                                 <Map key={`hombres-${year}`} id="hombres" year={year} gender="Hombres" geoJSON={geoJSONHombres} aggregatedData={aggregatedDataHombres} mortalityData={mortalityDatasaveHombres} modal_bool={false} />
-                                <VerticalProgressBar id="hombres" value={averageRateHombres} title="Promedio Hombres" />
+                                <VerticalProgressBar id="hombres" value={averageRateHombres} title="Promedio España Hombres" />
                                 <Map key={`mujeres-${year}`} id="mujeres" year={year} gender="Mujeres" geoJSON={geoJSONMujeres} aggregatedData={aggregatedDataMujeres} mortalityData={mortalityDatasaveMujeres} modal_bool={false} />
-                                <VerticalProgressBar id="mujeres" value={averageRateMujeres} title="Promedio Mujeres" />
+                                <VerticalProgressBar id="mujeres" value={averageRateMujeres} title="Promedio España Mujeres" />
                                 <div style={{ width: '20%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px', marginRight: '0px' }}>                                
                                     <button className="button-info" onClick={handleTooltipInfoButtonClick}>Información del Proyecto</button>
                                     <input
